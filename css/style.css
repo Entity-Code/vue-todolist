@@ -63,6 +63,7 @@
 .element > span{
    font-size: 20px;
    padding-bottom: 5px;
+   transition: 0.25s;
 }
 .elements-container i:hover{
    cursor: pointer;
