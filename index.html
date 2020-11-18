@@ -8,41 +8,34 @@
       <title>Todo List</title>
    </head>
    <body>
-
-      <div id="container">
+      <!-- istanza vue -->
+      <div id="app">
          <!-- title -->
          <h1>Todo List</h1>
 
          <!-- input -->
          <div class="container-input">
-            <input type="text">
-            <button type="button" name="button">Aggiungi</button>
+            <input v-model="newItem" type="text" placeholder="Nuovo Todo">
+            <button v-on:click="addItem">Aggiungi</button>
          </div>
 
          <!-- lista cose da fare -->
          <div class="container-list">
-            <div class="elements-container">
-               <div class="element">
-                  <span>cucinare</span>
-                  <i class="fas fa-times"></i>
-               </div>
-               <div class="element">
-                  <span>cucinare</span>
-                  <i class="fas fa-times"></i>
-               </div>
-               <div class="element">
-                  <span>cucinare</span>
-                  <i class="fas fa-times"></i>
-               </div>
+            <ul class="elements-container">
+               <li v-for="(item, index) in items" class="element">
+                  <!-- what to do -->
+                  <span>{{ item }}</span>
+                  <!-- x -->
+                  <i @click="removeItem(index)" class="fas fa-times"></i>
+               </li>
 
 
-            </div>
-
-
+            </ul>
          </div>
 
-      </div>
 
+      </div>
+      <!-- fine istanza vue -->
 
       <!-- link js -->
       <script type="text/javascript" src="js/script.js"></script>

@@ -8,13 +8,13 @@
 }
 
 /* vue istance */
-#container{
+#app{
    width: 55%;
    min-height: 500px;
    margin: 3% auto;
    text-align: center;
 }
-#container > h1{
+#app > h1{
    color: #292929;
    weight: bolder;
 }
@@ -60,4 +60,13 @@
 .element > span{
    font-size: 20px;
    padding-bottom: 5px;
+}
+.elements-container i:hover{
+   cursor: pointer;
+}
+
+
+/* js */
+.dNone{
+   display: none;
 }
