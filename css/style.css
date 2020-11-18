@@ -10,13 +10,16 @@
 /* vue istance */
 #app{
    width: 55%;
-   min-height: 500px;
    margin: 3% auto;
    text-align: center;
 }
 #app > h1{
    color: #292929;
    weight: bolder;
+}
+#app > h1 > i{
+   padding: 15px;
+   font-size: 45px;
 }
 
 
@@ -43,7 +46,7 @@
 .container-list{
    background-color: #eeeeee;
    width: 100%;
-   min-height: 150px;
+   min-height: 50px;
    border-radius: 10px;
    text-align: left;
 }
