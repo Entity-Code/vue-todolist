@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr"> 
    <head>
       <meta charset="utf-8">
       <link rel="stylesheet" href="css/style.css">
@@ -15,7 +15,7 @@
 
          <!-- input -->
          <div class="container-input">
-            t
+            
             <input v-model="newItem" v-on:keyup.13="addItem" type="text" placeholder="Nuovo Todo">
             <button v-on:click="addItem">Aggiungi</button>
          </div>
@@ -23,17 +23,17 @@
          <!-- lista cose da fare -->
          <div class="container-list">
             <ul class="elements-container">
-
                <li v-for="(item, index) in items" class="element">
                   <!-- what to do -->
                   <span>{{ item }}</span>
                   <!-- x -->
                   <i @click="removeItem(index)" class="fas fa-times"></i>
                </li>
-
-            </ul>
+            </ul>         
          </div>
       </div>
+      
+      
       <!-- fine istanza vue -->
 
       <!-- link js -->

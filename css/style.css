@@ -69,6 +69,29 @@
    cursor: pointer;
 }
 
+/* mode */
+#mode{
+   position: absolute;
+   right: 25px;
+   top: 25px;
+}
+#mode > button:first-child{
+   background-color: black;
+   color: white;
+   font-size: 15px;
+   padding: 5px;
+   border-radius: 10px;
+}
+#mode > button:last-child{
+   background-color: white;
+   color: black;
+   font-size: 15px;
+   padding: 5px;
+   border-radius: 10px;
+}
+
+
+
 
 /* js */
 .dNone{

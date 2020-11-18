@@ -1,9 +1,9 @@
 // todo list
-var container = new Vue({
+var container = new Vue({ 
    el: "#app",
 
    data: {
-      items: ["Cosa da fare n.1", "Cosa da fare n.2", "Cosa da fare n.3"],
+      items: ["Cosa da fare"],
       newItem: ""
    },
 
@@ -11,7 +11,9 @@ var container = new Vue({
       // aggiunta on click btn
       addItem: function() {
          if (this.newItem == "") {
-            alert("Da come vedo non hai nulla da fare!")
+            alert("Da come vedo non hai nulla da fare!");
+         } else if(this.items.includes(this.newItem)){
+            alert("L'hai già segnato!");
          } else {
             this.items.push(this.newItem);
          }
@@ -21,5 +23,6 @@ var container = new Vue({
       removeItem: function(index) {
          this.items.splice(index, 1);
       }
+
    }
 });
